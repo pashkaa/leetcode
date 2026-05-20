@@ -4,7 +4,7 @@ var longestConsecutive = function (nums) {
   let dataSet = new Set(nums);
   let maxLength = 0;
 
-  for (let num of nums) {
+  for (let num of dataSet) {
     if (!dataSet.has(num - 1)) {
       let currentNum = num;
       let currentMax = 1;
